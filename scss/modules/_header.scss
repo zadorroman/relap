@@ -1,0 +1,53 @@
+.header {
+    background: url('../images/header-mobile.jpg') no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 1px;
+    min-height: 768px;
+    height: 100vh;
+
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        @include size(100%,65px);
+        @include pos(fixed, $t: 0,$l: 0, $z:99);
+
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        
+    }
+
+    &__btn {
+        
+    }
+
+    &__title {
+        font: 700 56px/64px $font-title;
+        color: #fff;
+        margin: 90px 0 25px;
+    }
+
+    &__text {
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        margin-bottom: 290px;
+    }
+
+    
+}
+
+.nav__btn {
+    display: none;
+}
+

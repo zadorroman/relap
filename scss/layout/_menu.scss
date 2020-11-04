@@ -1,0 +1,97 @@
+.menu {
+    position: relative;
+
+    &__toggle {
+        display: none;
+
+        &:checked {
+            + .menu__label {
+
+                .menu__line {
+                    display: none;
+                }
+
+                &::before {
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 4px;
+                }
+            }
+
+            ~ .menu__wrap {
+                right: 0;
+            }
+        }
+    }
+
+    &__label {
+        @include size(20px, 15px);
+        @include pos(relative, $t: 25px,$r: 15px, $z: 99);
+        display: block;
+
+        &::before,
+        &::after {
+            @include size(100%, 3px);
+            @include pos($r: 0);
+            content: '';
+            background: #C86DD7;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -1px;
+        }
+
+        &::after {
+            bottom: 1px;
+        }
+    }
+
+    &__line {
+        @include size(100%, 3px);
+        @include pos(absolute, $l: 0, $t: 35%);
+        background: #C86DD7;
+    }
+
+    &__wrap {
+        @include size(150px, 30vh);
+        @include pos($r: -150px, $t: 65px);
+        background: transparent;
+        transition: all .3s;
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+
+
+
+        &--active {
+            position: relative;
+
+            &::after {
+                @include size(100%, 20px);
+                @include pos($b: 5px, $l: 50%);
+                content: '';
+                background: rgba(64, 44, 179, 0.733);
+                transform: translateX(-50%);
+                border-radius: 40%;
+                display: block;
+                box-shadow: 0 0 15px 13px rgba(65, 44, 179, .7);
+                z-index: -1;
+            }
+        }
+    }
+}

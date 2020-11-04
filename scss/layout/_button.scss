@@ -1,0 +1,15 @@
+.button {
+    @include size(170px, 50px);
+
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-radius: 24px;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px 58px;
+    
+    &--yellow {
+        background: #FFC300;
+    }
+}
