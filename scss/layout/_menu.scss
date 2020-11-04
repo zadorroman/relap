@@ -75,23 +75,20 @@
         text-decoration: none;
         font-weight: 700;
         font-size: 24px;
+        position: relative;
 
-
-
-        &--active {
-            position: relative;
-
-            &::after {
-                @include size(100%, 20px);
-                @include pos($b: 5px, $l: 50%);
-                content: '';
-                background: rgba(64, 44, 179, 0.733);
-                transform: translateX(-50%);
-                border-radius: 40%;
-                display: block;
-                box-shadow: 0 0 15px 13px rgba(65, 44, 179, .7);
-                z-index: -1;
+        &::after {
+            @include size(100%, 20px);
+            @include pos($b: 5px, $l: 50%);
+            
+            content: '';
+            background: rgba(64, 44, 179, 0.733);
+            transform: translateX(-50%);
+            border-radius: 40%;
+            display: block;
+            box-shadow: 0 0 15px 13px rgba(65, 44, 179, .7);
+            z-index: -1;
             }
-        }
+        
     }
 }
