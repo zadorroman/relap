@@ -1,0 +1,39 @@
+.gallery__images {
+  width: 1170px;
+  min-width: 400px;
+  margin: 0 auto 35px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.img__list {
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.gallery__img {
+  margin-right: 30px;
+  position: relative;
+
+  &__img--mod {
+    margin-right: -30px;
+  }
+}
+
+.img__text {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 1;
+  transform: translateY(200px) translateX(30px);
+
+  @media (max-width: 414px) {
+    display: none;
+  }
+}

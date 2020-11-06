@@ -1,45 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Relap" />
+    <meta name="author" content="Admin" />
+    <title>Relap</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Relap">
-	<meta name="author" content="Admin">
-	<title>Relap</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
 
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/styles.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+  <body>
+    <section class="gallery">
+      <div class="gallery__wrap">
+		  <div class="gallery__width">
+        <div class="gallery__header">
+          <p class="gallery__desc">Nisi ut aliquid</p>
+          <h1 class="gallery__title">
+            Ullam corporis <br />
+            suscipit
+          </h1>
+        </div>
+        <div class="gallery__block">
+          <p class="gallery__text">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem.
+          </p>
+		</div>
+		</div>
+      
+      <div class="gallery__menu">
+        <ul class="gallery__list">
+          <li class="gallery__item"> <span class="gallery__span">Quis Autem</span> </li>
+          <li class="gallery__item">Reprehenderit</li>
+          <li class="gallery__item">Voluptate</li>
+          <li class="gallery__item">Molestiae</li>
+          <li class="gallery__item">Consequatur</li>
+        </ul>
+      </div>
 
-<body>
+      <div class="gallery__images">
+        <div class="wrapper">
+          <ul class="img__list">
+            <li class="item__img">
+              <img src="images/abstract-1.jpg" alt="img" class="gallery__img" />
+            </li>
+            <li class="item__img">
+				<p class="img__text">Exercitation</p>
+				<p class="img__text text--mod">Exercitation</p>
+              <img src="images/abstract-2.jpg" alt="img" class="gallery__img" />
+            </li>
+            <li class="item__img">
+              <img src="images/abstract-3.jpg" alt="img" class="gallery__img--mod" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button">
+        <a href="#" class="button__link">All works</a>
+	  </div>
+	</div>
+    </section>
+
+    <section class="services">
+      <div class="services__header">
+        <h1 class="services__title">Fugiat quo</h1>
+        <p class="services__subtitle">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+      </div>
+
+      <div class="container services__container">
+		<div class="row services__row">
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#consq"></use>
+				</svg>
+				<h2 class="subtitle__svg">Consequuntur</h2>
+				<p class="text__svg">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#volup"></use>
+				</svg>
+				<h2 class="subtitle__svg">Voluptatem</h2>
+				<p class="text__svg">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#quis"></use>
+				</svg>
+				<h2 class="subtitle__svg">Quisquam</h2>
+				<p class="text__svg">Quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+			</div>
+		</div>
 
 
+		<div class="row services__row">
+			<div class="col services__block">
+			<svg class="icon__services">
+				<use xlink:href="images/sprite.svg#aliq"></use>
+			</svg>
+			<h2 class="subtitle__svg">Aliquid</h2>
+			<p class="text__svg">Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#exept"></use>
+				</svg>
+				<h2 class="subtitle__svg">Excepteur</h2>
+				<p class="text__svg">Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#accus"></use>
+				</svg>
+				<h2 class="subtitle__svg">Accusamus</h2>
+				<p class="text__svg">Odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+			</div>
+		</div>
+      </div>
+    </section>
 
-	<!-- <i class="icon-facebook"></i>
+    <!-- <i class="icon-facebook"></i>
 	<i class="icon-instagram"></i>
 	<i class="icon-twitter"></i>
 	<svg class="icon">
 		<use xlink:href="images/sprite.svg#accus"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#aliq"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#consq"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#exept"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#quis"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#volup"></use>
 	</svg> -->
-
-
-</body>
-
+  </body>
 </html>
