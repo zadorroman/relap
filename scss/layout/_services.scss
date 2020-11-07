@@ -24,6 +24,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .services__block {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
 .services__row {
   margin-bottom: 70px;
 }
