@@ -5,3 +5,13 @@
     color: #333333;
     padding: 15px;
 }
+
+@media (min-width: $mobile) {
+
+    .logo {
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    }
+}

@@ -20,3 +20,11 @@
 
     }
 }
+
+@media (min-width: $mobile) {
+    .social {
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+}
+
