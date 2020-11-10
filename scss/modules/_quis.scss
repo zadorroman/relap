@@ -1,69 +1,56 @@
 .quis{
-    height: 100vh;
     padding-top: 1px;
+    padding-bottom: 1px;
+    min-height: 100vh;
 
     &__subtitle {
-        font-weight: 700;
-        text-transform: uppercase;
         margin: 45px 0 15px;
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
         margin-bottom: 40px;
     }
 
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__toggle {
-        position: absolute;
-        left: -9999px;
+        display: none;
+        transition: all .3s;
 
         ~ .quis__text {
-            height: 0;
-            transform: scaleY(0);
+            display: none;
         }
         
         &:checked  ~ .quis__text {
-            height: 100%;
-            transform-origin: top;
-            transition: transform .2s ease-out;
-            transform: scaleY(1); 
+            display: block;
             }
     }
 
     &__toggle2 {
-        position: absolute;
-        left: -9999px;
+        display: none;
+        transition: all .3s;
 
         ~ .quis__text2 {
-            height: 0;
-            transform: scaleY(0);
+            display: none;
         }
         
         &:checked  ~ .quis__text2 {
-            height: 100%;
-            transform-origin: top;
-            transition: transform .2s ease-out;
-            transform: scaleY(1); 
+            display: block;
         }
     }
 
     &__toggle3 {
-        position: absolute;
-        left: -9999px;
+        display: none;
 
         ~ .quis__text3 {
-            height: 0;
-            transform: scaleY(0);
+            display: none;
         }
         
         &:checked  ~ .quis__text3 {
-            height: 100%;
-            transform-origin: top;
-            transition: transform .2s ease-out;
-            transform: scaleY(1); 
+            display: block;
         }
     }
 
@@ -76,7 +63,7 @@
         
                 &::after {
                     @include size(161px, 8px);
-                    @include pos($t: 12px, $l: 0);
+                    @include pos($t: 14px, $l: 0);
 
                     content: '';
                     background: #C86DD7;
@@ -95,6 +82,8 @@
 
     &__label {
         cursor: pointer;
+        margin-bottom: 25px;
+        transition: all .3s;
 
         &:last-child {
             margin-bottom: 60px;
@@ -114,171 +103,69 @@
 
     &__text, &__text2, &__text3 {
         padding: 8px 0 30px;
-    }
-
-    &__wrapper {
-        margin-bottom: 65px;
-        @include size(340px, 270px);
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
+        transition: all .3s;
+        opacity: .5;
     }
 
     &__video {
         cursor: pointer;
         position: relative;
-        margin-right: -20px;
-        border-radius: 3px 0px 0px 3px;
+        margin-right: -15px;
+        display: flex;
+        justify-content: flex-end;
+
 
         &::before {
             @include size(100%);
-            @include pos($t: 15px, $l: -15px);
+            @include pos($t: 15px, $l: 0px);
             
             content: '';
             background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
             border-radius: 3px 0px 0px 3px;
             z-index: -1;
+
         }
     }
+
+    &__img {
+        display: none;
+    }
+}
+
+@media (max-width: $mobile) {
+
+    &__img-mob {
+        display: block;
+        border-radius: 3px 0px 0px 3px;
+    }
+
 }
 
 @media (min-width: $mobile) {
     .quis{
-        padding-top: 1px;
-        padding-bottom: 1px;
+
     
         &__subtitle {
-            font-weight: 700;
-            text-transform: uppercase;
             margin: 140px 0 20px;
         }
     
         &__title {
-            font-weight: 700;
             font-size: 56px;
             line-height: 64px;
             margin-bottom: 55px;
         }
     
-    
-        &__toggle {
-            position: absolute;
-            left: -9999px;
-    
-            ~ .quis__text {
-                height: 0;
-                transform: scaleY(0);
-            }
-            
-            &:checked  ~ .quis__text {
-                height: 100px;
-                transform-origin: top;
-                transition: transform .2s ease-out;
-                transform: scaleY(1); 
-                }
-        }
-    
-        &__toggle2 {
-            position: absolute;
-            left: -9999px;
-    
-            ~ .quis__text2 {
-                height: 0;
-                transform: scaleY(0);
-            }
-            
-            &:checked  ~ .quis__text2 {
-                height: 100px;
-                transform-origin: top;
-                transition: transform .2s ease-out;
-                transform: scaleY(1); 
-            }
-        }
-    
-        &__toggle3 {
-            position: absolute;
-            left: -9999px;
-    
-            ~ .quis__text3 {
-                height: 0;
-                transform: scaleY(0);
-            }
-            
-            &:checked  ~ .quis__text3 {
-                height: 100%;
-                transform-origin: top;
-                transition: transform .2s ease-out;
-                transform: scaleY(1); 
-            }
-        }
-    
-        &__toggle, &__toggle2, &__toggle3 {
-    
-            &:checked {
-                + .quis__label {
-                   position: relative;
-                   margin-bottom: 0;
-            
-                    &::after {
-                        @include size(161px, 8px);
-                        @include pos($t: 12px, $l: 0);
-    
-                        content: '';
-                        background: #C86DD7;
-                        display: inline-block;
-                        z-index: -1;   
-                    }
-    
-                    .quis__arrow {
-                        transform: rotate(-135deg);
-                        -webkit-transform: rotate(-135deg);
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-    
-    
-    
-        &__label {
-            cursor: pointer;
-            padding-bottom: 1px;
-    
-    
-            &:last-child {
-                margin-bottom: 60px;
-            }
-        }
-    
-        &__arrow {
-            border: solid #131313;
-            border-width: 0 2px 2px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            margin: 0 0 3px 3px;
-            transition: all .3s;
-        }
-    
-        &__text, &__text2, &__text3 {
-            padding: 8px 0 30px;
-        }
-    
         &__wrapper {
             margin-bottom: 65px;
-            @include size(100%);
             display: flex;
-            justify-content: flex-end;
-            flex-direction: row;
         }
     
         &__video {
             cursor: pointer;
             position: relative;
-            margin-right: -20px;
             border-radius: 3px 0px 0px 3px;
-    
+            margin-top: 95px;
+
             &::before {
                 @include size(100%);
                 @include pos($t: 15px, $l: -15px);
@@ -288,6 +175,22 @@
                 border-radius: 3px 0px 0px 3px;
                 z-index: -1;
             }
+        }
+
+        &__img {
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: none;
+            border-radius: 3px 0px 0px 3px;
+        }
+
+        &__img-mob {
+            display: none;
+        }
+
+        &__wrap {
+            margin-bottom: 185px;
         }
     }
 }

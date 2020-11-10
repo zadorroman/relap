@@ -57,14 +57,7 @@
         background: #C86DD7;
     }
 
-    &__list {
-        @include size(150px, 30vh);
-        @include pos($r: -150px, $t: 65px);
-        background: transparent;
-        transition: all .3s;
-        padding: 25px 30px;
-        text-align: center;
-    }
+
 
     &__item {
         margin-bottom: 25px;
@@ -93,13 +86,24 @@
     }
 }
 
+
+@media (max-width: $mobile) {
+    .menu {
+        &__list {
+            @include size(150px, 30vh);
+            @include pos($r: -150px, $t: 65px);
+            background: transparent;
+            transition: all .3s;
+            padding: 25px 30px;
+            text-align: center;
+        }
+    }
+
+}
+
 @media (min-width: $mobile) {
 
     .menu {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    
         &__toggle {
             display: none;
         }
@@ -113,9 +117,6 @@
         }
     
         &__list {
-            @include size(100%);
-            @include pos(relative, $t: 0, $l: 0);
-            background: transparent;
             transition: all .3s;
             display: flex;
             flex-direction: row;
@@ -130,11 +131,7 @@
         }
     
         &__link {
-            color: #fff;
-            text-decoration: none;
             font-weight: 600;
-            font-size: 24px;
-            position: relative;
     
             &::after {
                 display: none;
