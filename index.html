@@ -1,45 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Relap" />
+    <meta name="author" content="Admin" />
+    <title>Relap</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Relap">
-	<meta name="author" content="Admin">
-	<title>Relap</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
 
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/styles.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+  <body>
+    <section class="gallery">
+      <div class="gallery__wrap">
+		  <div class="gallery__width">
+        <div class="gallery__header">
+          <p class="gallery__desc">Nisi ut aliquid</p>
+          <h1 class="gallery__title">
+            Ullam corporis <br />
+            suscipit
+          </h1>
+        </div>
+        <div class="gallery__block">
+          <p class="gallery__text">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem.
+          </p>
+		</div>
+		</div>
+      
+      <div class="gallery__menu">
+        <ul class="gallery__list">
+          <li class="gallery__item"> <span class="gallery__span">Quis Autem</span> </li>
+          <li class="gallery__item"><a href="#" class="gallery__link">Reprehenderit</a></li>
+          <li class="gallery__item"><a href="#" class="gallery__link">Voluptate</a></li>
+          <li class="gallery__item"><a href="#" class="gallery__link">Molestiae</a></li>
+          <li class="gallery__item"><a href="#" class="gallery__link">Consequatur</a></li>
+        </ul>
+      </div>
 
-<body>
+      <div class="gallery__images">
+        <div class="wrapper">
+          <ul class="img__list">
+            <li class="item__img">
+              <img src="images/abstract-1.jpg" alt="img" class="gallery__img" />
+            </li>
+            <li class="item__img">
+				<p class="img__text">Exercitation</p>
+				<p class="img__text img__text--mod">Ullamco laboris</p>
+              <img src="images/abstract-2.jpg" alt="img" class="gallery__img" />
+            </li>
+            <li class="item__img">
+              <img src="images/abstract-3.jpg" alt="img" class="gallery__img--mod" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button">
+        <a href="#" class="button__link">All works</a>
+	  </div>
+	</div>
+    </section>
+
+    <section class="services">
+      <div class="services__header">
+        <h1 class="services__title">Fugiat quo</h1>
+        <p class="services__subtitle">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+      </div>
+
+      <div class="container services__container">
+		<div class="row services__row">
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#consq"></use>
+				</svg>
+				<h2 class="subtitle__svg">Consequuntur</h2>
+				<p class="text__svg">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#volup"></use>
+				</svg>
+				<h2 class="subtitle__svg">Voluptatem</h2>
+				<p class="text__svg">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#quis"></use>
+				</svg>
+				<h2 class="subtitle__svg">Quisquam</h2>
+				<p class="text__svg">Quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+			</div>
+		</div>
 
 
+		<div class="row services__row">
+			<div class="col services__block">
+			<svg class="icon__services">
+				<use xlink:href="images/sprite.svg#aliq"></use>
+			</svg>
+			<h2 class="subtitle__svg">Aliquid</h2>
+			<p class="text__svg">Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#exept"></use>
+				</svg>
+				<h2 class="subtitle__svg">Excepteur</h2>
+				<p class="text__svg">Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim</p>
+			</div>
+			<div class="col services__block">
+				<svg class="icon__services">
+					<use xlink:href="images/sprite.svg#accus"></use>
+				</svg>
+				<h2 class="subtitle__svg">Accusamus</h2>
+				<p class="text__svg">Odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+			</div>
+		</div>
+      </div>
+    </section>
 
-	<!-- <i class="icon-facebook"></i>
+    <section class="blog">
+      <div class="blog__mid">
+      <div class="blog__block">
+      <p class="blog__desc">Nisi ut aliquid</p>
+      <h1 class="blog__title">Omnis voluptas
+      assumenda</h1>
+      <p class="blog__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+      possimus, omnis voluptas assumenda est.</p>
+      <div class="button__blog">
+        <a href="#" class="button__link">Our blog</a>
+      </div>
+      </div>
+      <div class="blog__img">
+        <div class="block__text">
+        <p class="blog__subtitle">Itaque earum rerum</p>
+        <p class="blog__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates</p>
+        <p class="blog__Author">
+          <img src="images/Author.jpg" alt="Author" class="author">
+          Adaora Azubuike</p>
+        </div>
+      <img src="images/Light.jpg" alt="img" class="block__images">
+      </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__head">
+      <h1 class="contact__title">Contact Us</h1>
+      <p class="contact__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+      dolorem eum fugiat quo voluptas.</p>
+        <div class="mail">
+      <form action="#" method="post" class="form">
+        <input type="email" id="mail" name="user_mail" placeholder="Your email" class="form__input">
+      </form>
+      <div class="button">
+        <a href="#" class="button__link">Send</a>
+      </div>
+      </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer">
+      <ul class="contact__list">
+        <li class="contact__items"> <span class="contact__span">Consectetur</span> </li>
+        <li class="contact__items">Adipiscing</li>
+        <li class="contact__items">Elit</li>
+        <li class="contact__items">Eiusmod</li>
+    </ul>
+      <ul class="contact__list">
+        <li class="contact__items"> <span class="contact__span">Tempor</span></li>
+        <li class="contact__items">Incididunt</li>
+        <li class="contact__items">Labore</li>
+        <li class="contact__items">Dolore</li>
+      </ul>
+      <ul class="contact__list">
+        <li class="contact__items"> <span class="contact__span">Magna</span></li>
+        <li class="contact__items">Aliqua</li>
+        <li class="contact__items">Minim</li>
+        <li class="contact__items">Veniam</li>
+      </ul>
+      <div class="wrapper">
+      <div class="contact__icons">
+        <ul class="icons">
+          <li class="icons__item"> <i class="icon-facebook"></i> </li>
+          <li class="icons__item"> <i class="icon-instagram"></i></li>
+          <li class="icons__item"> <i class="icon-twitter"></i></li>
+        </ul>
+      </div>
+      <p class="contact__footer">Copyright 2019. All Rights Reserved.</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- <i class="icon-facebook"></i>
 	<i class="icon-instagram"></i>
 	<i class="icon-twitter"></i>
 	<svg class="icon">
 		<use xlink:href="images/sprite.svg#accus"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#aliq"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#consq"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#exept"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#quis"></use>
-	</svg><svg class="icon">
+	</svg>
+	<svg class="icon">
 		<use xlink:href="images/sprite.svg#volup"></use>
 	</svg> -->
-
-
-</body>
-
+  </body>
 </html>
