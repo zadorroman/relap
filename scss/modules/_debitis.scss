@@ -1,0 +1,45 @@
+.debitis {
+    background: url('../images/background-debitis-mob.jpg') no-repeat bottom center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    &__title {
+        margin: 55px 0 25px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__cites {
+        margin-bottom: 350px;
+    }
+}
+
+@media (min-width: $mobile) {
+    .debitis {
+        background-image: url('../images/background-debitis.jpg');
+
+        &__title {
+            margin: 70px 0 25px;
+        }
+
+        &__text {
+            margin: 0 24% 65px;
+        }
+
+        &__wrap {
+            flex-wrap: nowrap;
+        }
+
+        &__cites {
+            margin-bottom: 225px;
+        }
+    }   
+
+}
