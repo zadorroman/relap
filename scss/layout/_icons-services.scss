@@ -1,0 +1,22 @@
+.icon__services {
+  width: 48px;
+  height: 48px;
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 100px;
+  }
+}
+
+.subtitle__svg {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.text__svg {
+  opacity: 0.5;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
