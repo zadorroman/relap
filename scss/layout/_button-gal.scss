@@ -1,19 +1,23 @@
 .button {
+  @include size(170px, 50px);
   display: block;
-  width: 170px;
-  height: 50px;
   border-radius: 24px;
   background-color: #c86dd7;
   text-align: center;
-  margin: 0 auto;
-  padding: 12px 53px;
+  padding: 12px 50px;
   cursor: pointer;
   transition: all 0.3s;
+  white-space: nowrap;
+  width: 700;
+
+  &--yellow {
+    background-color: #FFC300;
+}
 
   @media (min-width: 768px) {
     &:hover {
       background-color: blue;
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 
@@ -23,21 +27,5 @@
   }
 }
 .button__blog {
-  display: block;
-  width: 170px;
-  height: 50px;
-  border-radius: 24px;
-  background-color: #c86dd7;
-  text-align: center;
-  padding: 12px 53px;
-  cursor: pointer;
-  transition: all 0.3s;
   margin-bottom: 50px;
-
-  @media (min-width: 768px) {
-    &:hover {
-      background-color: blue;
-      transform: scale(1.2);
-    }
-  }
 }

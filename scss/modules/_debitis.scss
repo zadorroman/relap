@@ -1,7 +1,6 @@
 .debitis {
-    background: url('../images/background-debitis-mob.jpg') no-repeat bottom center;
+    background: #fff;
     background-size: cover;
-    min-height: 100vh;
     padding-top: 1px;
     padding-bottom: 1px;
 
@@ -17,13 +16,37 @@
     }
 
     &__cites {
-        margin-bottom: 350px;
+        margin-bottom: 80px;
     }
+
+    &__sponsors {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item {
+        width: 50%;
+        margin-bottom: 50px;
+
+        &:nth-child(5), &:nth-child(6) {
+            margin-bottom: 0;
+        }
+    }
+
+    
+
+    &__wrap {
+        margin-bottom: 75px;
+    }
+
 }
 
 @media (min-width: $mobile) {
     .debitis {
-        background-image: url('../images/background-debitis.jpg');
 
         &__title {
             margin: 70px 0 25px;
@@ -35,11 +58,30 @@
 
         &__wrap {
             flex-wrap: nowrap;
+            margin-bottom: 95px;
         }
 
         &__cites {
-            margin-bottom: 225px;
+            margin-bottom: 0;
         }
+
+        &__sponsors {
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 0;
+            transition: all .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
     }   
 
 }
