@@ -1,0 +1,123 @@
+.rep-img {
+    position: relative;
+    @include size(297px);
+
+    max-width: 100%;
+
+    &__main {
+        @include size(297px, 302px);
+        border-radius: 50%;
+        max-width: 100%
+    }
+
+    &__sec {
+        @include pos($t: 0, $l: 0);
+
+
+        border-radius: 50%;
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.401608);
+        max-width: 100%;
+        transition: all .3s;
+
+        
+        &--1 {
+            top: -13px;
+            left: -25px;
+            width: 136px;
+        }
+
+        &--2 {
+            top: 33px;
+            left: 229px;
+            width: 92px;
+        }
+
+        &--3 {
+            top: 175px;
+            width: 92px;
+        }
+
+        &--4 {
+            top: 181px;
+            left: 266px;
+            width: 40px;
+        }
+
+        &--5 {
+            top: 243px;
+            left: 175px;
+            width: 66px;
+        }
+    }
+}
+
+@media (min-width: $mobile) {
+    .rep-img {
+        @include size(370px);
+    
+    
+        &__main {
+            @include size(370px);
+            position: relative;
+        }
+    
+        &__sec {
+
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &--1 {
+                top: -16px;
+                left: -31px;
+                width: 170px;
+            }
+    
+            &--2 {
+                top: 40px;
+                left: 286px;
+                width: 114px;
+            }
+    
+            &--3 {
+                top: 215px;
+                width: 114px;
+            }
+    
+            &--4 {
+                top: 222px;
+                left: 332px;
+                width: 50px;
+            }
+    
+            &--5 {
+                top: 298px;
+                left: 218px;
+                width: 82px;
+            }
+        }
+    }
+
+    .planet{
+        animation: rotate linear 11s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      
+      @keyframes rotate{
+        0% {
+          opacity:1;
+          transform:  rotate(-360deg) ;
+        }
+        100% {
+          opacity:1;
+          transform:  rotate(360deg) ;
+        }
+      }
+}
+
+
+

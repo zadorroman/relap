@@ -12,7 +12,7 @@
     }
 
     &__navigation {
-        @include size(100%,65px);
+        @include size(100%, 65px);
         @include pos(fixed, $t: 0,$l: 0, $z:99);
 
         display: flex;
@@ -50,6 +50,8 @@
 
         &__wrap {
             display: block;
+            height: 100vh;
+            position: relative;
         }
     
         &__navigation {
@@ -96,6 +98,13 @@
             border: 1px solid rgba(255, 255, 255, 0.295063);
             border-radius: 24px;
             white-space:nowrap;
+            transition: all .3s;
+
+            &:hover {
+                background-color: blue;
+                transform: scale(1.1);
+            }
+
         }
     }
     

@@ -1,15 +1,30 @@
 .repellendus {
-    background: url('../images/repellendus-background1.jpg') no-repeat top center;
+    // background: url('../images/repellendus-background1.jpg') no-repeat top center;
+    background: #3023AE;
     background-size: cover;
-    min-height: 100vh;
     padding-top: 1px;
     margin-top: 65px;
     padding-bottom: 1px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow: visible;
+
+    position: relative;
+
+            &::before {
+                @include size(100px);
+                @include pos($t: -30px, $r: 0);
+
+                content: '';
+                background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+                border-radius: 50%;
+                transform: translateX(50%);
+
+            } 
+
 
 
     &__pic {
-        margin: 115px 0 35px;
+        margin: 115px auto 35px;
     }
 
     &__img {
@@ -38,15 +53,22 @@
 @media (min-width: $mobile) {
 
     .repellendus {
-        background-image: url('../images/repellendus-background2.jpg');
+        background-image: url('../images/repellendus-background.jpg');
+
+        &::before {
+
+            right: unset;
+            left: 27%;
+        }        
 
 
         &__pic {
-            margin: 205px 0 35px;
+            margin: 175px 0 220px;
+            
         }
 
         &__subtitle {
-            margin: 205px 0 20px;
+            margin: 175px 0 20px;
         }
 
         &__btn {
