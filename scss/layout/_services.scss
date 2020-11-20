@@ -16,6 +16,12 @@
     font-weight: 700;
     line-height: 64px;
     margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+          font-size: 40px;
+          line-height: 48px;
+    }
+
   }
 
   &__subtitle {
@@ -26,15 +32,22 @@
 
 @media (min-width: 768px) {
   .services__block {
+    padding: 30px 25px;
     transition: all 0.3s;
+    cursor: pointer;
 
     &:hover {
-      transform: scale(0.9);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+      box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+      border-radius: 3px;
     }
   }
 }
 
 .services__row {
   margin-bottom: 70px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 }

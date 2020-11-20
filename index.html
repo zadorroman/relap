@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="description" content="Relap" />
-	<meta name="author" content="Admin" />
+	<meta name="author" content="Roman Zadorozhnyi & Aleksandr Velychko" />
 	<title>Relap</title>
 
-	<link rel="icon" href="images/favicon.png" />
+	<link rel="icon" href="images/favicon.svg" />
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
 	<link rel="stylesheet" href="css/styles.min.css" />
 
@@ -54,7 +54,7 @@
 					</ul>
 				</div>
 
-				<a href="#" class="nav__link">Contact Us</a>
+				<a href="#contact" class="nav__link">Contact Us</a>
 
 			</nav>
 
@@ -94,10 +94,9 @@
 	<section class="quis">
 		<div class="container">
 			<div class="row quis__block">
-				<div class="col-lg-5 quis__wrap">
+				<div class="col-lg-6 quis__wrap">
 					<div class="quis__subtitle subtitle">Quis autem</div>
-					<div class="quis__title title">Corporis suscipit
-						laboriosam</div>
+					<div class="quis__title title">Corporis suscipit laboriosam</div>
 					<input type="checkbox" class="quis__toggle" id="quis" checked>
 					<label for="quis" class="quis__label">Totam rem aperiam <span class="quis__arrow"></span> </label>
 					<p class="quis__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
@@ -133,14 +132,14 @@
 	<section class="gallery">
 		<div class="gallery__wrap">
 			<div class="gallery__width">
-				<div class="gallery__header">
-					<p class="gallery__desc">Nisi ut aliquid</p>
-					<h1 class="gallery__title">
+				<div class="gallery__header col-lg-6">
+					<p class="gallery__desc subtitle">Nisi ut aliquid</p>
+					<h1 class="gallery__title title">
 						Ullam corporis <br />
 						suscipit
 					</h1>
 				</div>
-				<div class="gallery__block">
+				<div class="gallery__block col-lg-6">
 					<p class="gallery__text">
 						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
 						fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -168,27 +167,27 @@
 						<li class="item__img">
 							<img src="images/abstract-1.jpg" alt="img" class="gallery__img" />
 						</li>
-						<li class="item__img">
+						<li class="item__img item__img--mod">
 							<p class="img__text">Exercitation</p>
 							<p class="img__text img__text--mod">Ullamco laboris</p>
 							<img src="images/abstract-2.jpg" alt="img" class="gallery__img" />
 						</li>
 						<li class="item__img">
-							<img src="images/abstract-3.jpg" alt="img" class="gallery__img--mod" />
+							<img src="images/abstract-3.jpg" alt="img" class="gallery__img" />
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="button">
-				<a href="#" class="button__link">All works</a>
+			<div class="gallery__btn">
+				<a href="#" class="button button__link">All works</a>
 			</div>
 		</div>
 	</section>
 
 	<section class="services">
 		<div class="services__header">
-			<h1 class="services__title">Fugiat quo</h1>
+			<h1 class="services__title title">Fugiat quo</h1>
 			<p class="services__subtitle">
 				Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 				accusantium doloremque laudantium, totam rem aperiam.
@@ -197,21 +196,21 @@
 
 		<div class="container services__container">
 			<div class="row services__row">
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#consq"></use>
 					</svg>
 					<h2 class="subtitle__svg">Consequuntur</h2>
 					<p class="text__svg">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
 				</div>
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#volup"></use>
 					</svg>
 					<h2 class="subtitle__svg">Voluptatem</h2>
 					<p class="text__svg">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
 				</div>
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#quis"></use>
 					</svg>
@@ -222,21 +221,21 @@
 
 
 			<div class="row services__row">
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#aliq"></use>
 					</svg>
 					<h2 class="subtitle__svg">Aliquid</h2>
 					<p class="text__svg">Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil</p>
 				</div>
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#exept"></use>
 					</svg>
 					<h2 class="subtitle__svg">Excepteur</h2>
 					<p class="text__svg">Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim</p>
 				</div>
-				<div class="col services__block">
+				<div class="col-12 col-lg-4 services__block">
 					<svg class="icon__services">
 						<use xlink:href="images/sprite.svg#accus"></use>
 					</svg>
@@ -358,13 +357,14 @@
 		</div>
 	</section>
 
-	<section class="blog">
+	<section class="blog" id="blog">
 		<div class="blog__mid">
 			<div class="blog__block">
-				<p class="blog__desc">Nisi ut aliquid</p>
-				<h1 class="blog__title">Omnis voluptas
+				<p class="blog__desc subtitle">Nisi ut aliquid</p>
+				<h1 class="blog__title title">Omnis voluptas
 					assumenda</h1>
-				<p class="blog__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+				<p class="blog__text text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+					quo
 					minus id quod maxime placeat facere
 					possimus, omnis voluptas assumenda est.</p>
 				<div class="button__blog">
@@ -376,46 +376,48 @@
 					<p class="blog__subtitle">Itaque earum rerum</p>
 					<p class="blog__description">Temporibus autem quibusdam et aut officiis debitis aut rerum
 						necessitatibus saepe eveniet ut et voluptates</p>
-					<p class="blog__Author">
+					<div class="blog__wrapper">
 						<img src="images/Author.jpg" alt="Author" class="author">
-						Adaora Azubuike</p>
+						<p class="blog__Author">Adaora Azubuike</p>
+					</div>
 				</div>
 				<img src="images/Light.jpg" alt="img" class="block__images">
 			</div>
 		</div>
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="contact__head">
-			<h1 class="contact__title">Contact Us</h1>
-			<p class="contact__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+			<h1 class="contact__title title">Contact Us</h1>
+			<p class="contact__text text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+				nihil
 				molestiae consequatur, vel illum qui
 				dolorem eum fugiat quo voluptas.</p>
 			<div class="mail">
 				<form action="#" method="post" class="form">
 					<input type="email" id="mail" name="user_mail" placeholder="Your email" class="form__input">
 				</form>
-				<div class="button">
-					<a href="#" class="button__link">Send</a>
+				<div class="mail__button">
+					<a href="#" class="button button__link">Send</a>
 				</div>
 			</div>
 		</div>
 		<div class="line"></div>
 		<div class="footer">
 			<ul class="contact__list">
-				<li class="contact__items"> <span class="contact__span">Consectetur</span> </li>
+				<li class="contact__items contact__items--active">Consectetur</li>
 				<li class="contact__items">Adipiscing</li>
 				<li class="contact__items">Elit</li>
 				<li class="contact__items">Eiusmod</li>
 			</ul>
 			<ul class="contact__list">
-				<li class="contact__items"> <span class="contact__span">Tempor</span></li>
+				<li class="contact__items contact__items--active">Tempor</li>
 				<li class="contact__items">Incididunt</li>
 				<li class="contact__items">Labore</li>
 				<li class="contact__items">Dolore</li>
 			</ul>
 			<ul class="contact__list">
-				<li class="contact__items"> <span class="contact__span">Magna</span></li>
+				<li class="contact__items contact__items--active">Magna</li>
 				<li class="contact__items">Aliqua</li>
 				<li class="contact__items">Minim</li>
 				<li class="contact__items">Veniam</li>

@@ -1,16 +1,18 @@
 .blog {
-  background: #f2f2f2;
+  background: #FDF2FF;
   padding: 40px 20px;
 
   &__desc {
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &__title {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 25px;
+    line-height: 48px;
   }
 
   &__text {
@@ -35,13 +37,19 @@
 
   &__Author {
     font-weight: 600;
+    line-height: 16px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
   }
 }
 
 .blog__img {
   position: relative;
   width: 330px;
-  margin: 0 auto;
+  margin: 0px auto 55px;
 
   &::before {
     @include size(100%);
@@ -56,6 +64,7 @@
 
 .block__images {
   position: relative;
+  border-radius: 3px 0px 0px 3px;
 }
 
 .block__text {
@@ -96,6 +105,7 @@
 
     &__img {
       @include size(550px);
+      margin: 110px 0;
     }
   }
 

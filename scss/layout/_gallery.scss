@@ -1,20 +1,22 @@
 .gallery {
-  background: #f2f2f2;
-  padding: 40px;
+  background: #FDF2FF;
+  padding: 0 15px;
   margin: 0 auto;
+  padding: 1px 0;
 
   @media (max-width: 768px) {
-    width: 414px;
     overflow: hidden;
-    padding: 20px;
   }
 
   &__wrap {
     width: 1170px;
     margin: 0 auto;
 
+
     @media (max-width: 768px) {
       width: 100%;
+      margin-top: 30px;
+      
     }
   }
 
@@ -23,7 +25,7 @@
     justify-content: space-between;
     margin: 0 auto;
 
-    @media (max-width: 414px) {
+    @media (max-width: $mobile) {
       flex-direction: column;
     }
   }
@@ -33,13 +35,27 @@
   }
   &__desc {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
   }
 
   &__title {
-    font-size: 50px;
-    line-height: 48px;
-    margin-bottom: 25px;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 55px;
+    font-weight: 700;
+
+    @media (max-width: $mobile) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 25px;
+    }
   }
 
   &__block {
@@ -47,13 +63,23 @@
     justify-content: space-between;
   }
 
+  &__btn {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
   &__text {
     opacity: 0.5;
+    padding-right: 15px;
+    margin: 0 auto;
     margin-bottom: 30px;
-    width: 670px;
 
-    @media (max-width: 768px) {
-      width: 370px;
+
+    
+
+
+    @media (min-width: 768px) {
+      margin-top: 110px;
     }
   }
 
@@ -63,11 +89,12 @@
 
     @media (max-width: 768px) {
       width: 380px;
+      padding: 0 15px;
     }
   }
 
   &__span {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   &__item {
@@ -77,14 +104,18 @@
 
     @media (min-width: 768px) {
       &:hover {
-        transform: scale(1.1);
-        font-weight: 700;
+        font-weight: 600;
+
+        .gallery__link {
+          opacity: 1;
+        }
       }
     }
   }
 
   &__link {
     text-decoration: none;
-    color: #181818;
+    color: #333333;
+    opacity: 0.5;
   }
 }

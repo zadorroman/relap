@@ -33,6 +33,7 @@
 @media (min-width: $mobile) {
     .cite {
         transition: all .3s;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.1);
