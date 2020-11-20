@@ -101,7 +101,7 @@
             transition: all .3s;
 
             &:hover {
-                background-color: blue;
+                background-color: $orange;
                 transform: scale(1.1);
             }
 

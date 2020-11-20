@@ -1,7 +1,6 @@
 .quis{
     padding-top: 1px;
     padding-bottom: 1px;
-    min-height: 100vh;
 
     &__subtitle {
         margin: 45px 0 15px;
@@ -113,7 +112,7 @@
         margin-right: -15px;
         display: flex;
         justify-content: flex-end;
-        margin: 0 -15px 65px 35px;
+        margin: 0 0em 65px auto;
         @include size(100%);
         max-width: 339px;
         max-height: 272px;
@@ -148,7 +147,6 @@
 
 @media (min-width: $mobile) {
     .quis{
-        height: 100vh;
     
         &__subtitle {
             margin: 140px 0 20px;
@@ -167,10 +165,10 @@
         &__video {
             @include size(100%);
             cursor: pointer;
-            position: relative;
+            position: absolute;
             max-width: 670px;
             max-height: 540px;
-            right: -135px;
+            right: 0;
 
             margin-top: 95px;
             margin-bottom: 130px;
